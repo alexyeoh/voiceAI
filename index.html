@@ -21,19 +21,32 @@
     .btn-stop {
       background-color: #ef4444;
     }
+    .center{
+      text-align: center;
+      max-width: 600px;
+    }
   </style>
 </head>
 <body>
-  <div style="text-align:center; margin-top: 50px;">
-    <div>
+  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; margin-top: 50px;">
+    <h1 class="text-4xl font-bold mb-8">
+      ElevenLabs Conversational AI
+    </h1>
+  
+    <p style="max-width: 600px; margin-bottom: 20px;">
+      Alexis from ElevenLabs support will answer everything you ask about ElevenLabs offerings, including Text-to-Speech, Conversational AI, Speech-to-Text, Studio, Dubbing, SDKs, and more.
+    </p>
+  
+    <div style="display: flex; gap: 10px; justify-content: center; margin-bottom: 20px;">
       <button id="startBtn" class="btn btn-start">Start Conversation</button>
       <button id="stopBtn" class="btn btn-stop" disabled>Stop Conversation</button>
     </div>
-    <div style="margin-top: 20px;">
+  
+    <div>
       <p id="status">Status: disconnected</p>
-      <p id="agentStatus">Agent is: idle</p>
     </div>
   </div>
+  
 
   <script type="module" src="/src/main.ts"></script>
 </body>
