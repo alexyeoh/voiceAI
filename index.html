@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ElevenLabs Voice Agent</title>
+  <style>
+    button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+    .btn {
+      padding: 10px 20px;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+    .btn-start {
+      background-color: #3b82f6;
+    }
+    .btn-stop {
+      background-color: #ef4444;
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align:center; margin-top: 50px;">
+    <div>
+      <button id="startBtn" class="btn btn-start">Start Conversation</button>
+      <button id="stopBtn" class="btn btn-stop" disabled>Stop Conversation</button>
+    </div>
+    <div style="margin-top: 20px;">
+      <p id="status">Status: disconnected</p>
+      <p id="agentStatus">Agent is: idle</p>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
+
